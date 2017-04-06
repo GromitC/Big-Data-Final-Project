@@ -1,3 +1,4 @@
+conda create --name bigdata
 echo "trying to CREATE environment "bigdata" (if it already exists, it is ok if fails)"
 echo ""
 conda env create -f environment.yml
