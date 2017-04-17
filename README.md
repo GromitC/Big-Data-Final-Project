@@ -31,11 +31,14 @@ The data cleaning park is done on Spark.
 We use conda as our package and environment system, thus avoiding any inconsistency problem.
 
 You can configure the project environment by
+
 `./config.sh`
 
 Then You can switch into our project environment by
+
 `source activate bigdata`
 or switch out by
+
 `source deactivate`
 
 When you see `(bigdata)` at the head of your command line prompt, you are in our project environment. Conda helps keep consistancy issues.
@@ -45,6 +48,7 @@ When you see `(bigdata)` at the head of your command line prompt, you are in our
 We write our plotting program in Jupyter Notebook, which is built in Anaconda.
 
 To open Jupyter Notebook in local host, please type in your command line
+
 `(bigdata) your-machine-name$ jupyter notebook`
 
 Our plotting program is in **311_playground.ipynb**. You can run it cell by cell to get figures. The output figures are located in **To-Do**
