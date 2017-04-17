@@ -38,7 +38,6 @@ Then You can switch into our project environment by
 
 `source activate bigdata`
 or switch out by
-
 `source deactivate`
 
 When you see `(bigdata)` at the head of your command line prompt, you are in our project environment. Conda helps keep consistancy issues.
