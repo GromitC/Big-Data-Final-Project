@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Causality </title>
+    <script src="d3.min.js"></script>
+    <script src="bower_components/EventDrops/src/eventDrops.js"></script>
+    <script src="foo.js"></script>
+    <link rel="stylesheet" href="demo.css" />
+    <link rel="stylesheet" href="leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="parallel.css" />
+</head>
+<body>
+
+<div id="header">
+    <h1> Causality between [NYC 311 Complaints] and [NYC Crime] datasets </h1>
+    <div class="controls">
+
+        <strong id="rendered-count"></strong>/<strong id="selected-count"></strong><!--<strong id="data-count"></strong>-->
+        <div style='    float: right;padding-left: 17px;padding-top: 4px;'>
+            <button id="hide-ticks">Hide Ticks</button>
+            <button id="show-ticks" disabled="disabled">Show Ticks</button>
+        </div>
+        <div class="fillbar"><div id="selected-bar"><div id="rendered-bar">&nbsp;</div></div></div>
+        <!--       <button id="dark-theme">Dark</button> -->
+        <!--       <button id="light-theme" disabled="disabled">Light</button> -->
+    </div>
+    <div style="clear:both;"></div>
+</div>
+
+
+<div id="chart">
+    <canvas id="background"></canvas>
+    <canvas id="foreground"></canvas>
+    <canvas id="highlight"></canvas>
+    <svg></svg>
+</div>
+
+
+<div id="wrap">
+    <div  class="third">
+        <small>
+            <!--Last rendered <strong id="render-speed"></strong> lines-->
+        </small>
+        <h3>Categories</h3>
+        <p id="legend">
+        </p>
+    </div>
+    <div class="third">
+        <div id="sorted-by"></div>
+        <h3 id="top-entries"></h3></br>
+            <input type="text" id="search" style='' placeholder="Search streets..."></input></h3>
+        <p id="food-list">
+        </p>
+    </div>
+
+</div>
+
+<div id="map"></div>
+
+</body>
+
+
+<script src="fisheye.js"></script>
+<script src="underscore.js"></script>
+<script src="leaflet.js"></script>
+<script src="leaflet.polylineDecorator.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="parallel.js"></script>
+
+<script>
+    //init();
+    //g = d3.select("svg").selectAll(".dimension");
+    //remove_axis('Zip_311',g);
+    //remove_axis('Zip_NYPD',g);
+    //remove_axis('index',g);
+    //remove_axis('Relationship',g);
+    //brush();
+</script>
+</html>
+
